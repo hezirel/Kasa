@@ -3,22 +3,24 @@ import React from "react";
 import "../styles/App.css";
 import Feed from "./Feed";
 
-const App = () => {
+class App extends React.Component {
 
-	const getData = async () => {
-		let res = await fetch("../data.json");
-		res = await res.json();
-		return res;
-	};
+	constructor(props) {
+		super(props),
+		this.state = ({ data: []});
+	}
 
-	let cache = getData();
+	componentDidMount() {
+		fetch("../data.json").then(res => res.json())
+			.then(json => this.setState({ data: json }));
+	}
 
-	return (
-		<div className="App">
+	render() {
+		return (<div className="App">
 			<img src={logo} className="App-logo" alt="logo" />
-			<Feed data={cache} />
-		</div>
-	);
-};
+			<Feed data={this.state.data} />
+		</div>);
+	}
+}
 
 export default App;

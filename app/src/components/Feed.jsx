@@ -3,14 +3,13 @@ import PropTypes from "prop-types";
 
 const Feed = ({data}) => {
 
-	console.log(data);
-	return (<p>
-		{typeof(data)}
-	</p>);
+	return (<ul>
+		{data.map(item => <li key={item.id}>{item.title}</li>)}
+	</ul>);
 };
 
 Feed.propTypes = {
-	data: PropTypes.object.isRequired
+	data: PropTypes.array.isRequired
 };
 
 export default Feed;
