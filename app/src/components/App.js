@@ -1,16 +1,24 @@
 import logo from "../assets/logo.svg";
 import React from "react";
 import "../styles/App.css";
-import cache from "../js/datafetch";
+import Feed from "./Feed";
 
-async function App() {
-	let data = cache();
-	console.log(data);
+const App = () => {
+
+	const getData = async () => {
+		let res = await fetch("../data.json");
+		res = await res.json();
+		return res;
+	};
+
+	let cache = getData();
+
 	return (
 		<div className="App">
 			<img src={logo} className="App-logo" alt="logo" />
+			<Feed data={cache} />
 		</div>
 	);
-}
+};
 
 export default App;
