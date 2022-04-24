@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../styles/Feed.css";
+import HousingCard from "./HousingCard";
 
 const Feed = ({data}) => {
 
-	return (<ul>
-		{data.map(item => <li key={item.id}>{item.title}</li>)}
-	</ul>);
+	return (<div className="grid grid-container">
+		{data.map(item => <HousingCard key={item.id} data={item}/>)}
+	</div>);
 };
 
 Feed.propTypes = {

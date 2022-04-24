@@ -1,7 +1,15 @@
 .App {
   text-align: center;
 }
+.container {
+    padding:1.25rem;
+    flex-direction: column;
+}
 
+.flex {
+    display:flex;
+    gap: var(--gap, .625rem); /* 10px default gap */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,0 +1,20 @@
+/* thumb */
+.thumb {
+    width:100%; /* 340px */
+    height: 15.938rem; /* 255px */
+    border-radius:.625rem; /* 10px */
+    padding: 1.25rem; /* 20px */
+    align-items:flex-end;
+    color:white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-color: var(--clr-primary);
+}
+
+.thumb > h2 {
+    width:12ch;
+}
+
+.flex {
+    display:flex;
+    gap: var(--gap, .625rem); /* 10px default gap */
+}
