@@ -5,7 +5,7 @@ import HousingCard from "./HousingCard";
 
 const Feed = ({data}) => {
 
-	return (<div className="grid grid-container">
+	return (<div className="grid-container grid">
 		{data.map(item => <HousingCard key={item.id} data={item}/>)}
 	</div>);
 };
