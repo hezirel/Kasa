@@ -1,4 +1,5 @@
 .grid {
+    display: grid;
     gap: var(--gap, 3.125rem); /* 50px default gap */
 }
 
