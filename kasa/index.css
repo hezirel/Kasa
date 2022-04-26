@@ -39,14 +39,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-img {
-    max-width:100%;
-    display:block;
-}
+
 .header-main {
     background-color: var(--clr-disabled-light);
     padding: 1rem 5rem;
 }
+
+/*#:Adapt to inline on mobile*/
 .header-container {
     display:flex;
     align-items:center;
