@@ -3,7 +3,11 @@ import "../styles/Header.css";
 import React from "react";
 
 const Header = () => {
-	return (<img src={logo} className="logo" alt="logo" />);
+	return (
+		<header>
+			<img src={logo} className="logo" alt="logo" />
+		</header>
+	);
 };
 
 export default Header;

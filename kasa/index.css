@@ -43,6 +43,28 @@ img {
     max-width:100%;
     display:block;
 }
+.header-main {
+    background-color: var(--clr-disabled-light);
+    padding: 1rem 5rem;
+}
+.header-container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.header-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+.header-nav li {
+	display: inline;
+}
+.header-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
 
 ul {
     list-style-type: none;

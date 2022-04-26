@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Kasa</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/2f777012c0.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container flex">
-            <div class="flex">
-                <div class="pill flex center">Cozy</div>
-                <div class="pill flex center">Canal</div>
-                <div class="pill flex center">Paris 10</div>
-            </div>
-            <div class="grid-container grid">
-                <article class="thumb flex">
-                    <h2>Titre de la location</h2>
-                </article>
-                <article class="thumb flex">
-                    <h2>Titre de la location</h2>
-                </article>
-                <article class="thumb flex">
-                    <h2>Titre de la location</h2>
-                </article>
-                <article class="thumb flex">
-                    <h2>Titre de la location</h2>
-                </article>
-                <article class="thumb flex">
-                    <h2>Titre de la location</h2>
-                </article>
-                <article class="thumb flex">
-                    <h2>Titre de la location</h2>
-                </article>
-            </div>
-            <div class="dropdown-container flex">
-                <div class="dropdown">
-                    <div class="dropdown-toggle flex" data-for="description" aria-expanded="false">
-                        <p data-for="description">Description</p>
-                        <button class="dropdown-btn" data-for="description">
-                            <i class="fas fa-chevron-down" data-for="description"></i>
-                        </button>
-                    </div>
-                    <div id="description" class="dropdown-content"">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kasa</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2f777012c0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="header-container">
+            <img src="logo.svg" alt="logo">
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">Acceuil</a>
+                    </li>
+                    <li class="header-nav-item">
+                        <a href="#" class="header-nav-link">A Propos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container flex">
+        <div class="flex">
+            <div class="pill flex center">Cozy</div>
+            <div class="pill flex center">Canal</div>
+            <div class="pill flex center">Paris 10</div>
+        </div>
+        <div class="grid-container grid">
+            <article class="thumb flex">
+                <h2>Titre de la location</h2>
+            </article>
+            <article class="thumb flex">
+                <h2>Titre de la location</h2>
+            </article>
+            <article class="thumb flex">
+                <h2>Titre de la location</h2>
+            </article>
+            <article class="thumb flex">
+                <h2>Titre de la location</h2>
+            </article>
+            <article class="thumb flex">
+                <h2>Titre de la location</h2>
+            </article>
+            <article class="thumb flex">
+                <h2>Titre de la location</h2>
+            </article>
+        </div>
+        <div class="dropdown-container flex">
+            <div class="dropdown">
+                <div class="dropdown-toggle flex" data-for="description" aria-expanded="false">
+                    <p data-for="description">Description</p>
+                    <button class="dropdown-btn" data-for="description">
+                        <i class="fas fa-chevron-down" data-for="description"></i>
+                    </button>
+                </div>
+                <div id="description" class="dropdown-content"">
                         <p>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied).</p>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class=" dropdown">
                     <div class="dropdown-toggle flex" data-for="equipments" aria-expanded="false">
                         <p data-for="equipments">Équipements</p>
                         <button class="dropdown-btn" data-for="equipments">
@@ -72,62 +89,80 @@
                     </div>
                 </div>
             </div>
-            <div class="dropdown-container about-dropdown-container flex">
-                <div class="dropdown">
-                    <div class="dropdown-toggle about-dropdown-toggle flex" data-for="reliability" aria-expanded="false">
-                        <p data-for="reliability">Fiabilité</p>
-                        <button class="dropdown-btn" data-for="reliability">
-                            <i class="fas fa-chevron-down" data-for="reliability"></i>
-                        </button>
+            <div class=" dropdown-container about-dropdown-container flex">
+                        <div class="dropdown">
+                            <div class="dropdown-toggle about-dropdown-toggle flex" data-for="reliability"
+                                aria-expanded="false">
+                                <p data-for="reliability">Fiabilité</p>
+                                <button class="dropdown-btn" data-for="reliability">
+                                    <i class="fas fa-chevron-down" data-for="reliability"></i>
+                                </button>
+                            </div>
+                            <div id="reliability" class="dropdown-content about-dropdown-content">
+                                <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont
+                                    conformes aux logements, et toutes les informations sont régulièrement vérifiées par
+                                    nos équipes.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle about-dropdown-toggle flex" data-for="respect"
+                                aria-expanded="false">
+                                <p data-for="respect">Respect</p>
+                                <button class="dropdown-btn" data-for="respect">
+                                    <i class="fas fa-chevron-down" data-for="respect"></i>
+                                </button>
+                            </div>
+                            <div id="respect" class="dropdown-content about-dropdown-content">
+                                <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement
+                                    discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre
+                                    plateforme.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle about-dropdown-toggle flex" data-for="service"
+                                aria-expanded="false">
+                                <p data-for="service">Service</p>
+                                <button class="dropdown-btn" data-for="service">
+                                    <i class="fas fa-chevron-down" data-for="service"></i>
+                                </button>
+                            </div>
+                            <div id="service" class="dropdown-content about-dropdown-content">
+                                <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience
+                                    parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown-toggle about-dropdown-toggle flex" data-for="security"
+                                aria-expanded="false">
+                                <p data-for="security">Sécurité</p>
+                                <button class="dropdown-btn" data-for="security">
+                                    <i class="fas fa-chevron-down" data-for="security"></i>
+                                </button>
+                            </div>
+                            <div id="security" class="dropdown-content about-dropdown-content">
+                                <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les
+                                    voyageurs, chaque logement correspond aux critères de sécurité établis par nos
+                                    services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à
+                                    nos équipes de vérifier que les standards sont bien respectés. Nous organisons
+                                    également des ateliers sur la sécurité domestique pour nos hôtes.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div id="reliability" class="dropdown-content about-dropdown-content">
-                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p>
+                    <div class="carousel-container">
+                        <i class="fas fa-chevron-left arrow-left flex center"></i>
+                        <i class="fas fa-chevron-right arrow-right flex center"></i>
+                        <div class="carousel flex">
+                            <img class="carousel-img"
+                                src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+                                alt="">
+                            <img class="carousel-img"
+                                src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg"
+                                alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <div class="dropdown-toggle about-dropdown-toggle flex" data-for="respect" aria-expanded="false">
-                        <p data-for="respect">Respect</p>
-                        <button class="dropdown-btn" data-for="respect">
-                            <i class="fas fa-chevron-down" data-for="respect"></i>
-                        </button>
-                    </div>
-                    <div id="respect" class="dropdown-content about-dropdown-content">
-                        <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <div class="dropdown-toggle about-dropdown-toggle flex" data-for="service" aria-expanded="false">
-                        <p data-for="service">Service</p>
-                        <button class="dropdown-btn" data-for="service">
-                            <i class="fas fa-chevron-down" data-for="service"></i>
-                        </button>
-                    </div>
-                    <div id="service" class="dropdown-content about-dropdown-content">
-                        <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <div class="dropdown-toggle about-dropdown-toggle flex" data-for="security" aria-expanded="false">
-                        <p data-for="security">Sécurité</p>
-                        <button class="dropdown-btn" data-for="security">
-                            <i class="fas fa-chevron-down" data-for="security"></i>
-                        </button>
-                    </div>
-                    <div id="security" class="dropdown-content about-dropdown-content">
-                        <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-container">
-                <i class="fas fa-chevron-left arrow-left flex center"></i>
-                <i class="fas fa-chevron-right arrow-right flex center"></i>
-                <div class="carousel flex">
-                    <img class="carousel-img" src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg" alt="">
-                    <img class="carousel-img" src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        
-        <script src="index.js" async defer></script>
-    </body>
+
+                <script src="index.js" async defer></script>
+</body>
+
 </html>
