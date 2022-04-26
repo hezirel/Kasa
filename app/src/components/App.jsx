@@ -14,6 +14,7 @@ const App = () => {
 
 	return (<div className="App container flex">
 		<img src={banner} />
+
 		<Feed data={cache.data} />
 	</div>);
 		
