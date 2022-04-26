@@ -1,6 +1,6 @@
 :root {
     --clr-primary:#FF6060;
-    --crl-diabled:#C4C4C4;
+    --crl-disabled:#C4C4C4;
     --clr-disabled-light: #E3E3E3;
 }
 
@@ -63,6 +63,8 @@ body {
 .header-nav a {
 	display: inline-block;
 	padding: .5em 1.5em;
+    text-decoration: none;
+    color: var(--clr-primary);
 }
 
 ul {
@@ -228,7 +230,7 @@ ul {
 
     .thumb {
         aspect-ratio: 1;
-        height: auto;
+        height: 15rem;
     }
 
     .dropdown-container:not(.about-dropdown-container) {
