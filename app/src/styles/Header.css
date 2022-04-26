@@ -1,6 +1,7 @@
 .header-main {
     background-color: var(--clr-disabled-light);
     padding: 1rem 5rem;
+    width: 100%;
 }
 
 /*#:Adapt to inline on mobile*/
@@ -18,9 +19,16 @@
 .header-nav li {
 	display: inline;
 }
-.header-nav a {
+.header-nav-link {
 	display: inline-block;
 	padding: .5em 1.5em;
     text-decoration: none;
     color: var(--clr-primary);
+}
+
+.header-nav-link-active {
+	display: inline-block;
+	padding: .5em 1.5em;
+    color: var(--clr-primary);
+    text-decoration: underline;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/App.css";
 import Feed from "./Feed";
+import banner from "../assets/homeBanner.svg";
 
 const App = () => {
 
@@ -12,6 +13,7 @@ const App = () => {
 	});
 
 	return (<div className="App container flex">
+		<img src={banner} />
 		<Feed data={cache.data} />
 	</div>);
 		

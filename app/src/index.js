@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import App from "./components/App";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
@@ -13,11 +14,12 @@ root.render(
 		<Header />
 		<Router>
 			<Routes>
-				<Route path="/" element={<App />}/>
-				<Route path="/housing" element={<Header />}/>
-				<Route path="/about" element={<Header />}/>
+				<Route path="" element={<App />}/>
+				<Route path="/housing" element={<div>Test</div>}/>
+				<Route path="/about" element={<div>Test</div>}/>
 			</Routes>
 		</Router>
+		<Footer />
 	</React.StrictMode>
 );
 

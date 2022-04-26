@@ -3,10 +3,10 @@ import React from "react";
 import "../styles/HousingCard.css";
 
 
-const HousingCard = (props) => {
+const HousingCard = ({data}) => {
 	return (
 		<article className="thumb flex">
-			<h2>{props.data.title}</h2>
+			<h2>{data.title}</h2>
 		</article>
 	);
 };
