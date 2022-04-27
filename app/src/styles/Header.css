@@ -26,7 +26,7 @@
     color: var(--clr-primary);
 }
 
-.header-nav-link-active {
+.active {
 	display: inline-block;
 	padding: .5em 1.5em;
     color: var(--clr-primary);
