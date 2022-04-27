@@ -12,7 +12,7 @@ const Header = () => {
 					<Router>
 						<ul className="header-nav-list">
 							<li className="header-nav-item">
-								<NavLink to="/" className="header-nav-link">Acceuil</NavLink>
+								<NavLink to="/" style={({ isActive }) => isActive ? {textDecoration: "underline"} : null} className="header-nav-link">Acceuil</NavLink>
 							</li>
 							<li className="header-nav-item">
 								<NavLink to="/about" className="header-nav-link">A propos</NavLink>

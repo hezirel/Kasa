@@ -27,8 +27,5 @@
 }
 
 .active {
-	display: inline-block;
-	padding: .5em 1.5em;
-    color: var(--clr-primary);
     text-decoration: underline;
 }
