@@ -1,0 +1,14 @@
+.banner-main {
+    border-radius: 10px;
+    background-color: green;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+};
+
+.banner-text > p {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+};

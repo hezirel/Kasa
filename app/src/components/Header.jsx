@@ -12,12 +12,10 @@ const Header = () => {
 					<Router>
 						<ul className="header-nav-list">
 							<li className="header-nav-item">
-								<a>
-									<NavLink to="/" className="header-nav-link" activeClassName="header-nav-link-active">Acceuil</NavLink>
-								</a>
+								<NavLink to="/" className="header-nav-link">Acceuil</NavLink>
 							</li>
 							<li className="header-nav-item">
-								<a href="/housing" className="header-nav-link">A Propos</a>
+								<NavLink to="/about" className="header-nav-link">A propos</NavLink>
 							</li>
 						</ul>
 					</Router>
