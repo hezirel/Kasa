@@ -9,6 +9,9 @@ const Housing = () => {
 	return (
 		<div>
 			{data.description}
+			<ul>
+				{data.equipments.map((elt, i) => <li key={i}>{elt}</li>)}
+			</ul>
 		</div>
 	);
 };
