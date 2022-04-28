@@ -16,6 +16,7 @@ const App = () => {
 	return (<div className="App container flex">
 
 		<Feed data={cache.data} />
+
 	</div>);
 		
 };
