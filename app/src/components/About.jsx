@@ -27,32 +27,21 @@ const About = () => {
 
 		const aboutText = [{
 					id: "reliability",
-					text: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." },
-					{id: "
-					reliability ", text: "
-					Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont
-					conformes aux logements,
-					et toutes les informations sont régulièrement vérifiées par
-					nos équipes.
-					" }, {id: "
-					reliability ", text: "
-					Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont
-					conformes aux logements,
-					et toutes les informations sont régulièrement vérifiées par
-					nos équipes.
-					" }, {id: "
-					reliability ", text: "
-					Les annonces postées sur Kasa garantissent une fiabilité totale.Les photos sont
-					conformes aux logements,
-					et toutes les informations sont régulièrement vérifiées par
-					nos équipes.
-					" }];
+					text: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+				}, {
+					id: "respect",
+					text: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+				}, {
+					id: "service",
+					text: "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
+				}, {
+					id: "security",
+					text: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+				}];
 
-					return ( <
-						div className = " dropdown-container about-dropdown-container flex" >
-						<
-						/>
-					);
-				};
+		return ( 
+		<div className = " dropdown-container about-dropdown-container flex" > <div/>
+		);
+};
 
-				export default About;
+export default About;
