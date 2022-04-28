@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import aboutText from "../assets/texts.json";
+import aboutText from "../data/texts.json";
 
 const About = () => {
 

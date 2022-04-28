@@ -9,7 +9,7 @@ const App = () => {
 	const [cache, setCache] = useState({data: []});
 
 	useEffect(() => {
-		fetch("../data.json").then(res => res.json())
+		fetch("../data/data.json").then(res => res.json())
 			.then(json => setCache({ data: json }));
 	});
 	//		#:<Banner source={banner} text={"Chez vous, partout et ailleurs"}/>
