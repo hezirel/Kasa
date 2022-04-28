@@ -14,7 +14,7 @@ const About = () => {
 			<div className="dropdown" key={id}>
 				<div className="dropdown-toggle about-dropdown-toggle flex" data-for={id}
 					aria-expanded="false">
-					<p data-for={id}>{id}</p>
+					<p data-for={id}>{id.replace(/^\w/, (c) => c.toUpperCase())}</p>
 					<button className="dropdown-btn" data-for={id} onClick={e => toggle(e)}>
 						<i className="fas fa-chevron-down" data-for={id}></i>
 					</button>
