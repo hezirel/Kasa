@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 const Housing = () => {
 
 	const data = useLocation().state.data;
+
+	//#:Compose Housing view with sub components
 	
 	return (
 		<div>

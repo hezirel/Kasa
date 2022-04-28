@@ -5,13 +5,9 @@ import "../styles/HousingCard.css";
 
 
 const HousingCard = ({data}) => {
-
-	let params = {
-		pathname: "/housing",
-	};
 	
 	return (
-		<Link to={params} state={{data: data}}>
+		<Link to="/housing" state={{data: data}}>
 			<article className="thumb flex">
 				<h2>{data.title}</h2>
 			</article>

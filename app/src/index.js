@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import App from "./components/App";
 import Header from "./components/Header";
@@ -19,9 +19,10 @@ root.render(
 		<Router>
 			<Header />
 			<Routes>
-				<Route path="/" element={<App />}/>
-				<Route path="/housing/:id" element={<Housing />}/>
+				<Route exact path="/" element={<Navigate replace to="/home" />}/>
+				<Route path="/home" element={<App />}/>
 				<Route path="/about" element={<About />}/>
+				<Route path="/housing" element={<Housing />}/>
 				<Route path="*" element={<NotFound />}/>
 			</Routes>
 			<Footer />
