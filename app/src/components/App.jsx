@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "../styles/App.css";
 import Feed from "./Feed";
-// import Banner from "./Banner";
-// import banner from "../assets/homeBanner.svg";
+import Banner from "./Banner";
 
 const App = () => {
 
 	const [cache, setCache] = useState({data: []});
 
 	useEffect(() => {
-		fetch("../data/data.json").then(res => res.json())
+		fetch("./data.json").then(res => res.json())
 			.then(json => setCache({ data: json }));
 	});
-	//		#:<Banner source={banner} text={"Chez vous, partout et ailleurs"}/>
 	return (<div className="App container flex">
 
+		<Banner source={"home"}/>
 		<Feed data={cache.data} />
 
 	</div>);

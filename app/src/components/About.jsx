@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 import aboutText from "../data/texts.json";
+import Banner from "./Banner";
 
 const About = () => {
 
@@ -27,9 +28,12 @@ const About = () => {
 	};
 
 	return ( 
-		<div className = " dropdown-container about-dropdown-container flex" >
-			{aboutText.map(e => dropWindow(e))}
-		</div>
+		<>
+			<Banner source="about" />
+			<div className = " dropdown-container about-dropdown-container flex" >
+				{aboutText.map(e => dropWindow(e))}
+			</div>
+		</>
 	);
 };
 
