@@ -24,7 +24,7 @@
 }
 
 .dropdown-content {
-    display:none;
+    display:block;
     margin-top:-.625rem; /* 10px */
     padding-top:1.5rem;/* 40px */
     padding-bottom:1.25rem;
@@ -32,11 +32,11 @@
     height:auto;
     border-bottom-left-radius:.625rem; /* 10px */
     border-bottom-right-radius:.625rem; /* 10px */
-    font-size: 0.75rem; /* 12px */
+    font-size: 1rem; /* 12px */
     color:var(--clr-primary);
     background-color: #F6F6F6;
 }
 
 .show {
-    display:block;
+    display:none;
 }
