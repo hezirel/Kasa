@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
-import App from "./components/App";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Housing from "./components/Housing";
-import About from "./components/About";
-import NotFound from "./components/404";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
+import About from "./components/common/About";
+import NotFound from "./components/common/404";
+
+import App from "./components/feed/App";
+import Housing from "./components/housing/HousingWrapper";
 
 import "./styles/index.css";
 

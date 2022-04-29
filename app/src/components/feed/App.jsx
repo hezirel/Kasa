@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "../styles/App.css";
+import "../../styles/App.css";
 import Feed from "./Feed";
-import Banner from "./Banner";
+import Banner from "../common/Banner";
 
 const App = () => {
 
@@ -11,6 +11,7 @@ const App = () => {
 		fetch("./data.json").then(res => res.json())
 			.then(json => setCache({ data: json }));
 	});
+
 	return (<div className="App container flex">
 
 		<Banner source={"home"}/>
