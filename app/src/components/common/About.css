@@ -1,15 +1,13 @@
 .about-app-container {
-    padding: 1rem 5rem;
+    padding: .5rem 5rem;
 }
-
 
 .about-dropdown-container {
     gap: var(--gap);
-    padding: 1rem 5rem;
     flex-direction: column;
 }
 
 .about-narrow {
-    padding: 1rem 5rem;
+    padding: .2rem 2rem;
     gap: var(--gap);
 }

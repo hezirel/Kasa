@@ -19,8 +19,8 @@ const dropWindow = ({id, text}) => {
 					<i className="fas fa-chevron-down" data-for={id}></i>
 				</button>
 			</div>
-			<div id={id} className="dropdown-content about-dropdown-content">
-				{typeof text === "string" ? <p>{text}</p> : text.map(item => <p key={item}>{item}</p>)}
+			<div id={id} className="dropdown-content">
+				{typeof text === "string" ? <p>{text}</p> : text.map(item => <li key={item}>{item}</li>)}
 			</div>
 		</div>
 	);

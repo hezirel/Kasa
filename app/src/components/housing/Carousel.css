@@ -3,7 +3,7 @@
     position:relative;
     width: auto;
     align-self: center;
-    margin: 1rem;
+    margin: 0.3rem 1rem;
     height:19rem; /* 255px */
     border-radius: .625rem; /* 10px */
     overflow:hidden;

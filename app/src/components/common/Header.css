@@ -1,7 +1,6 @@
 .header-main {
-    background-color: var(--clr-disabled-light);
-    padding: 1rem 5rem;
-    width: 100%;
+    background-color: white;
+    padding: 0.3rem 4rem;
 }
 
 /*#:Adapt to inline on mobile*/
@@ -10,6 +9,11 @@
     align-items:center;
     justify-content:space-between;
     flex-wrap: wrap;
+    max-height: min-content;
+}
+
+.header-container img {
+    max-height: 3rem;
 }
 
 .header-nav ul {
@@ -25,6 +29,7 @@
     text-decoration: none;
     color: var(--clr-primary);
 }
+
 
 .active {
     text-decoration: underline;

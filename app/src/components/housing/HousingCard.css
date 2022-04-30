@@ -1,6 +1,6 @@
 /* thumb */
 .thumb {
-    height: 35vh; /* 255px */
+    height: 30vh; /* 255px */
     border-radius:.625rem; /* 10px */
     align-items:flex-end;
     color:white;
