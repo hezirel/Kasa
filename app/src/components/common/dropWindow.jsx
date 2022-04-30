@@ -10,7 +10,6 @@ const dropWindow = ({id, text}) => {
 	};
 
 
-	//#:Adapter Array || text
 	return ( 
 		<div className="dropdown" key={id}>
 			<div className="dropdown-toggle about-dropdown-toggle flex" data-for={id}
@@ -21,7 +20,7 @@ const dropWindow = ({id, text}) => {
 				</button>
 			</div>
 			<div id={id} className="dropdown-content about-dropdown-content">
-				{text}
+				{typeof text === "string" ? <p>{text}</p> : text.map(item => <p key={item}>{item}</p>)}
 			</div>
 		</div>
 	);
