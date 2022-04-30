@@ -1,10 +1,10 @@
-.dropdown-container {
+.about-dropdown-container {
     gap: var(--gap);
     padding: 5rem 10rem;
     flex-direction: column;
 }
 
-.narrow {
+.about-narrow {
     padding: 1rem 5rem;
     gap: var(--gap);
 }

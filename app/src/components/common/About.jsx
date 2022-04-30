@@ -8,9 +8,9 @@ const About = () => {
 
 	return ( 
 		<>
-			<div className = "dropdown-container" >
+			<div className = "about-dropdown-container" >
 				<Banner />
-				<div className = "narrow" >
+				<div className = "about-narrow" >
 					{aboutText.map(e => dropWindow(e))}
 				</div>
 			</div>

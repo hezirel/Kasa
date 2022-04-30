@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/App.css";
+import "./App.css";
 import Feed from "./Feed";
 import Banner from "../common/Banner";
 

@@ -15,21 +15,22 @@ const dropWindow = ({id, text}) => {
 		<div className="dropdown" key={id}>
 			<div className="dropdown-toggle about-dropdown-toggle flex" data-for={id}
 				aria-expanded="false">
-				<p data-for={id}>{id.replace(/^\w/, (c) => c.toUpperCase())}</p>
+				<h2 data-for={id}>{id.replace(/^\w/, (c) => c.toUpperCase())}</h2>
 				<button className="dropdown-btn" data-for={id} onClick={e => toggle(e)}>
 					<i className="fas fa-chevron-down" data-for={id}></i>
 				</button>
 			</div>
 			<div id={id} className="dropdown-content about-dropdown-content">
-				<p>{text}</p>
+				{text}
 			</div>
 		</div>
 	);
 };
 
+//#:Foreach
 dropWindow.propTypes = {
 	id: PropTypes.string.isRequired,
-	text: PropTypes.string.isRequired
+	text: PropTypes.array.isRequired
 };
 
 export default dropWindow;

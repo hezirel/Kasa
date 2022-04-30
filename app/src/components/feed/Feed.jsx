@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../styles/Feed.css";
+import "./Feed.css";
 import HousingCard from "../housing/HousingCard";
 
 const Feed = ({data}) => {

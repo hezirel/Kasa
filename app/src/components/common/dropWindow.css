@@ -1,3 +1,12 @@
+h2 {
+    font-size: medium;
+    padding: 0.3rem;
+}
+
+p {
+    font-size: small;
+}
+
 
 .dropdown {
     margin: 0.5rem 0;
