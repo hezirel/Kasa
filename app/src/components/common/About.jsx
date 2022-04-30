@@ -7,14 +7,14 @@ import dropWindow from "./dropWindow";
 const About = () => {
 
 	return ( 
-		<>
+		<div className="about-app-container">
+			<Banner />
 			<div className = "about-dropdown-container" >
-				<Banner />
 				<div className = "about-narrow" >
 					{aboutText.map(e => dropWindow(e))}
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

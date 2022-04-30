@@ -26,7 +26,6 @@ const dropWindow = ({id, text}) => {
 	);
 };
 
-//#:Foreach
 dropWindow.propTypes = {
 	id: PropTypes.string.isRequired,
 	text: PropTypes.array.isRequired
