@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import aboutText from "../../data/texts.json";
 import Banner from "./Banner";
-import dropWindow from "./dropWindow";
+import DropWindow from "./dropWindow";
 
 const About = () => {
 
@@ -11,7 +11,7 @@ const About = () => {
 			<Banner />
 			<div className = "about-dropdown-container" >
 				<div className = "about-narrow" >
-					{aboutText.map(e => dropWindow(e))}
+					{aboutText.map(e => <DropWindow key={e.id} id={e.id} text={e.text} />)}
 				</div>
 			</div>
 		</div>

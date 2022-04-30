@@ -2,7 +2,7 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import "./dropWindow.css";
 
-const dropWindow = ({id, text}) => {
+const DropWindow = ({id, text}) => {
 
 	const toggle = (e) => {
 		const show = document.getElementById(e.target.dataset.for);
@@ -20,15 +20,15 @@ const dropWindow = ({id, text}) => {
 				</button>
 			</div>
 			<div id={id} className="dropdown-content">
-				{typeof text === "string" ? <p>{text}</p> : text.map(item => <li key={item}>{item}</li>)}
+				{typeof(text) === "string" ? <p>{text}</p> : text.map(item => <li key={item}>{item}</li>)}
 			</div>
 		</div>
 	);
 };
 
-dropWindow.propTypes = {
+DropWindow.propTypes = {
 	id: PropTypes.string.isRequired,
-	text: PropTypes.array.isRequired
+	text: PropTypes.oneOfType([PropTypes.string, PropTypes.array])
 };
 
-export default dropWindow;
+export default DropWindow;
