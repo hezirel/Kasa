@@ -10,14 +10,14 @@ import dropWindow from "../common/dropWindow";
 const Housing = ({data}) => {
 
 	return (
-		<>	
+		<div className="housing-app-container">	
 			<Carousel gallery={data.pictures}/>
 			<HousingInfo {...data}/>
 			<div className="dropdown-container flex">
 				{dropWindow({id: "description", text: [...data.description]})}
 				{dropWindow({id: "equipements", text: data.equipments})}
 			</div>
-		</>
+		</div>
 	);
 };
 

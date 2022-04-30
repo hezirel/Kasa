@@ -1,7 +1,11 @@
+.housing-app-container {
+    padding: 0 3rem;
+}
+
 .dropdown-container {
     display: flex;
     gap: var(--gap);
-    padding: 5rem 2rem;
+    padding: 1rem 2rem;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -9,6 +13,7 @@
 .flex {
     display: flex;
 }
+
 .dropdown {
     flex: 1;
     margin: 1rem;

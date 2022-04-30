@@ -2,13 +2,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0.5rem 1.5rem;
 }
 
 .housing-info-container > div {
     flex: 50%;
+    padding: 0.5rem;
+}
+
+.housing-info-top {
+    color: var(--clr-primary);
 }
 
 .housing-info-host {
+    color: var(--clr-primary);
     display: flex;
     align-items: center;
     justify-content: right;
@@ -22,7 +29,6 @@
 
 .housing-info-pill {
     gap: 1rem;
-    align-items: left;
 }
 
 .pill {
