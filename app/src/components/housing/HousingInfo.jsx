@@ -1,21 +1,38 @@
-import { React } from "react";
+import React from "react";
 import { PropTypes } from "prop-types";
-import "./Housing.css";
-import dropWindow from "../common/dropWindow";
 
-const Housing = ({data}) => {
+import "./HousingInfo.css";
 
-	data ? true : false;
+const HousingInfo = (props) => {
+
 	return (
-		<div className="dropdown-container flex">
-			{dropWindow({id: "description", text: [...data.description]})}
-			{dropWindow({id: "equipements", text: data.equipments})}
+		<div className="housing-info-container">
+			<div className="housing-info-top">
+				<h1 className="housing-info-title">{props.title}</h1>
+				<p>{props.location}</p>
+			</div>
+			<div className="housing-info-host">
+				<h1 className="housing-info-hostname">{props.host.name}</h1>
+			</div>
+
+			<div className="housing-info-pill flex">
+				{props.tags.map((tag, index) => <div className="pill center" key={index}>{tag}</div>)}
+			</div>
+			<div className="housing-info-rating">
+				{props.rating}
+			</div>
+
+
 		</div>
 	);
 };
 
-Housing.propTypes = {
-	data: PropTypes.object.isRequired
+HousingInfo.propTypes = {
+	title: PropTypes.string.isRequired,
+	location: PropTypes.string.isRequired,
+	tags: PropTypes.array.isRequired,
+	rating: PropTypes.string.isRequired,
+	host: PropTypes.object.isRequired,
 };
 
-export default Housing;
+export default HousingInfo;

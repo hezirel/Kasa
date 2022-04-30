@@ -1,0 +1,39 @@
+.housing-info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.housing-info-container > div {
+    flex: 50%;
+}
+
+.housing-info-host {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.housing-info-rating {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.housing-info-pill {
+    gap: 1rem;
+    align-items: left;
+}
+
+.pill {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 5.25rem; /* 84px */
+    height:1.125rem; /* 18px */
+    font-size:10px;
+    font-weight:500;
+    border-radius:.313rem; /* 5px */
+    color:white;
+    background-color:var(--clr-primary);
+}
