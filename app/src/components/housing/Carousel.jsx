@@ -5,12 +5,22 @@ import "./Carousel.css";
 
 const Carousel = ({gallery}) => {
 
+	const [activeImage, setActiveImage] = React.useState(0);
+
+	const handleClickMinus = () => {
+		setActiveImage((activeImage - 1) % gallery.length);
+	};
+
+	const handleClickPlus = () => {
+		setActiveImage((activeImage + 1) % gallery.length);
+	};
+
 	return (
 		<div className="carousel-container">
-			<i className="fas fa-chevron-left arrow-left flex center"></i>
-			<i className="fas fa-chevron-right arrow-right flex center"></i>
+			<i className="fas fa-chevron-left arrow-left flex center" onClick={handleClickMinus}></i>
+			<i className="fas fa-chevron-right arrow-right flex center" onClick={handleClickPlus}></i>
 			<div className="carousel flex">
-				{gallery.map((media, index) => <img className="carousel-img" src={media} key={index}></img>) };
+				{<img className="carousel-img" src={gallery[activeImage]} key={"i"}></img>}
 			</div>
 		</div>
 	);
