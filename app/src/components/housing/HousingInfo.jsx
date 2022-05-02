@@ -1,9 +1,19 @@
 import React from "react";
 import { PropTypes } from "prop-types";
+import star from "../../assets/star.svg";
+import starFull from "../../assets/starFull.svg";
 
 import "./HousingInfo.css";
 
 const HousingInfo = (props) => {
+
+	const ratingElt = (rating) => {
+		const stars = [];
+		for (let i = 0; i < 5; i++) {
+			stars.push(<img key={i} src={i >= rating ? (star) : (starFull)} alt="star" className="star"></img>);
+		}
+		return stars;
+	};
 
 	return (
 		<div className="housing-info-container">
@@ -20,10 +30,8 @@ const HousingInfo = (props) => {
 				{props.tags.map((tag, index) => <div className="pill center" key={index}>{tag}</div>)}
 			</div>
 			<div className="housing-info-rating">
-				{props.rating}
+				{ratingElt(props.rating)}
 			</div>
-
-
 		</div>
 	);
 };
