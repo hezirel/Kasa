@@ -73,6 +73,12 @@ p {
     justify-content: right;
 }
 
+.housing-info-hostpic {
+    padding: 1rem;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
 .housing-info-rating {
     display: flex;
     align-items: right;

@@ -12,7 +12,8 @@ const HousingInfo = (props) => {
 				<p>{props.location}</p>
 			</div>
 			<div className="housing-info-host">
-				<h1 className="housing-info-hostname">{props.host.name}</h1>
+				<h1 className="housing-info-hostname">{props.host.name.split(" ")[0]}<br/>{props.host.name.split(" ")[1]}</h1>
+				<img className="housing-info-hostpic" src={props.host.picture}></img>
 			</div>
 
 			<div className="housing-info-pill flex">

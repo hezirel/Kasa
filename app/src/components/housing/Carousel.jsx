@@ -8,7 +8,7 @@ const Carousel = ({gallery}) => {
 	const [activeImage, setActiveImage] = React.useState(0);
 
 	const handleClickMinus = () => {
-		setActiveImage((activeImage - 1) % gallery.length);
+		setActiveImage(activeImage ? (activeImage - 1) % (gallery.length) : (gallery.length - 1));
 	};
 
 	const handleClickPlus = () => {
@@ -20,7 +20,7 @@ const Carousel = ({gallery}) => {
 			<i className="fas fa-chevron-left arrow-left flex center" onClick={handleClickMinus}></i>
 			<i className="fas fa-chevron-right arrow-right flex center" onClick={handleClickPlus}></i>
 			<div className="carousel flex">
-				{<img className="carousel-img" src={gallery[activeImage]} key={"i"}></img>}
+				{<img className="carousel-img" src={gallery[activeImage]} key={activeImage}></img>}
 			</div>
 		</div>
 	);
