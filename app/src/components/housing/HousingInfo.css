@@ -2,16 +2,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem .5rem;
 }
 
 .housing-info-container > div {
     flex: 50%;
-    padding: 0.5rem;
+    padding: 0.35rem;
 }
 
 .housing-info-top {
     color: var(--clr-primary);
+    order: 0;
 }
 
 .housing-info-host {
@@ -19,33 +20,98 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    order: 3;
 }
 
+.housing-info-hostname {
+    font-size: medium;
+}
 .housing-info-hostpic {
     margin-left: 0.5rem;
     object-fit: cover;
     border-radius: 50%;
-    max-height: 3.5rem;
+    max-height: 2rem;
+    order: 3;
 }
 
 .housing-info-rating {
     display: flex;
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    justify-content: left;
+    order:2;
+}
+
+.housing-info-rating img { 
+    max-height: 1.2rem;
 }
 
 .housing-info-pill {
     gap: 1rem;
+    order: 1;
 }
 
 .pill {
     display: flex;
     justify-content:center;
     align-items:center;
-    padding: 0.4rem 1rem;
+    padding: 0.2rem 0.4rem;
     font-size:15px;
     font-weight:500;
     border-radius:.313rem; /* 5px */
     color:white;
     background-color:var(--clr-primary);
+}
+
+@media screen and (min-width:768px) {
+    .housing-info-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .housing-info-container > div {
+        flex: 50%;
+        padding: 0.5rem;
+    }
+    
+    .housing-info-top {
+        color: var(--clr-primary);
+    }
+    
+    .housing-info-host {
+        color: var(--clr-primary);
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    .housing-info-hostpic {
+        margin-left: 0.5rem;
+        object-fit: cover;
+        border-radius: 50%;
+        max-height: 3.5rem;
+    }
+    
+    .housing-info-rating {
+        display: flex;
+        align-items: right;
+        justify-content: right;
+    }
+    
+    .housing-info-pill {
+        gap: 1rem;
+    }
+    
+    .pill {
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        padding: 0.4rem 1rem;
+        font-size:15px;
+        font-weight:500;
+        border-radius:.313rem; /* 5px */
+        color:white;
+        background-color:var(--clr-primary);
+    }
 }
