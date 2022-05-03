@@ -23,7 +23,7 @@ root.render(
 				<Route exact path="/" element={<Navigate replace to="/home" />}/>
 				<Route path="/home" element={<App />}/>
 				<Route path="/about" element={<About />}/>
-				<Route path="/housing" element={<Housing />}/>
+				<Route path="/housing/:id" element={<Housing />}/>
 				<Route path="*" element={<NotFound />}/>
 			</Routes>
 			<Footer />

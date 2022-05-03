@@ -5,9 +5,9 @@ import "./HousingCard.css";
 
 
 const HousingCard = ({data}) => {
-	
+
 	return (
-		<Link to="/housing" state={{data: data}}>
+		<Link to={`/housing/${data.id}`} state={data}>
 			<article className="thumb flex">
 				<h2>{data.title}</h2>
 			</article>

@@ -5,7 +5,7 @@ import Housing from "./Housing";
 
 const HousingWrapper = () => {
 
-	let data = useLocation()?.state?.data;
+	let data = useLocation()?.state;
 
 	return (
 		data ? (<Housing data={data}/>) : (<Navigate to="/" />)
