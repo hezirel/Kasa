@@ -12,7 +12,8 @@
 }
 
 .header-container img {
-    max-height: 8vh;
+    max-height: 6vh;
+    max-width: min-content;
 }
 
 .header-nav ul {
