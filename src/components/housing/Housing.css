@@ -8,10 +8,17 @@
 @media screen and (min-width: 768px) {
     
     .housing-app-container {
-        padding: 0 3rem;
+        display: grid;
+        grid-template-areas: 
+        "carousel"
+        "info"
+        "dropdowns";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
     }
     
     .dropdown-container {
+        grid-area: dropdowns;
         display: flex;
         gap: var(--gap);
         padding: .2rem 1rem;

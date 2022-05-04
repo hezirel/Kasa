@@ -4,10 +4,16 @@
   --clr-disabled-light: #E3E3E3;
 }
 
+#root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.15fr 1fr 0.15fr;
+  max-height: 100vh;
+}
+
 * {
   box-sizing: border-box;
   margin:0;
-  padding: ;
 }
 
 h1,

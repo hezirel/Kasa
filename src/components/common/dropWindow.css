@@ -46,7 +46,6 @@ p {
     padding-bottom:1rem;
     padding-inline: 0.75rem; /* 12px */
     list-style-type: none;
-    max-height: fit-content;
     border-bottom-left-radius:.625rem; /* 10px */
     border-bottom-right-radius:.625rem; /* 10px */
     color:var(--clr-primary);
