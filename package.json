@@ -1,6 +1,6 @@
 {
-  "name": "app",
-  "homepage": "https://hezirel.github.io/Kasa/",
+  "name": "kasa",
+  "homepage": "https://hezirel.github.io/Kasa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
