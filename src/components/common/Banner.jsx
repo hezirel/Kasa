@@ -1,16 +1,16 @@
 import React from "react";
 import "./Banner.css";
-// import homeBanner from "../../assets/homeBanner.svg";
-// import aboutBanner from "../../assets/aboutBanner.svg";
+import homeBanner from "../../assets/homeBanner.svg";
+import aboutBanner from "../../assets/aboutBanner.svg";
 
 
 const Banner = () => {
 
 	const source = window.location.pathname.split("/").pop();
-	/* 	const img = ({
+	const img = ({
 		"home": homeBanner,
 		"about": aboutBanner
-	})[source]; */
+	})[source];
 
 	const text = ({
 		"home": "Chez vous, partout et ailleurs",
@@ -20,7 +20,7 @@ const Banner = () => {
 	return (
 		<>
 			<div className="hero-banner">
-				<img src={null} alt={text} />
+				<img src={img} alt={text} />
 				<h3>{text}</h3>
 			</div>
 		</>
