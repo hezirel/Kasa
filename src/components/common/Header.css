@@ -16,6 +16,10 @@
     max-width: min-content;
 }
 
+.header-nav {
+    align-self: center;
+}
+
 .header-nav ul {
     text-align: center;
 }
