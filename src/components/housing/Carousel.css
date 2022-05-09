@@ -16,6 +16,7 @@
 .carousel > img {
     object-fit: cover;
     object-position: center;
+    width: 100%;
 }
 
 .arrow-left, 
