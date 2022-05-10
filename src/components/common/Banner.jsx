@@ -6,15 +6,15 @@ import aboutBanner from "../../assets/aboutBanner.svg";
 
 const Banner = () => {
 
-	const source = window.location.pathname.split("#").pop();
+	const source = window.location.hash.split("/").pop();
 	const img = ({
-		"/home": homeBanner,
-		"/about": aboutBanner
+		"home": homeBanner,
+		"about": aboutBanner
 	})[source];
 
 	const text = ({
-		"/home": "Chez vous, partout et ailleurs",
-		"/about": ""
+		"home": "Chez vous, partout et ailleurs",
+		"about": ""
 	})[source];
 
 	return (
