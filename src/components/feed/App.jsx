@@ -8,7 +8,13 @@ const App = () => {
 	const [cache, setCache] = useState({data: []});
 
 	useEffect(() => {
-		fetch("./data.json").then(res => res.json())
+		fetch("data.json", {
+			headers: {
+				"Content-Type": "application/json",
+				"Accept": "application/json"
+			}
+		})
+			.then(res => res.json())
 			.then(json => setCache({ data: json }));
 	});
 
