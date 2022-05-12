@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate, useLocation, useParams } from "react-router-dom";
 import Housing from "./Housing";
 
 
@@ -8,7 +8,7 @@ const HousingWrapper = () => {
 	let data = useLocation()?.state;
 
 	return (
-		data ? (<Housing data={data}/>) : (<Navigate to="/" />)
+		data?.id === useParams()?.id ? (<Housing data={data}/>) : (<Navigate to="/404" />)
 	);
 };
 
